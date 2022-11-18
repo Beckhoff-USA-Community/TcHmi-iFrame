@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{17f4d5ae-0246-4c25-8af5-768435306fb8}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR	            	
+	Runnning		:BOOL;
+	Light			:BOOL;
+	
+	Data			:FB_GenerateData;
+
+	
+	fbFlasher		:FB_Flasher;	
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+fbFlasher(
+	xEnable:=Runnning , 
+	tTimeOff:=T#1S , 
+	tTimeOn:=T#1S , 
+	tTimeTillOn=> , 
+	tTimeTillOff=> , 
+	xStatus=> Light);
+	
+
+Data( );]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
