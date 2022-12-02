@@ -1,5 +1,11 @@
 {
     "USERS": {
+        "Administrator": {
+            "ALGORITHM": 1,
+            "ENABLED": true,
+            "PASSWORD": "45c8c1c3d7437269cef469873cf19be52882b5f9a6f1a8bc185aa2384d6773b88075a8b3bf3562f2d0d2206f109941783b0b6196575710d950d1ff4563fbc59c",
+            "SALT": "OUK9hTNxMjoCPcoemX8m4pToNoPA+yNnWc4TzC6gJmH6Yv+KeZubv6KUfWfkHzQGePzKzuCPDepontz6YPHMvw=="
+        },
         "__SystemAdministrator": {
             "ALGORITHM": 0,
             "ENABLED": false,

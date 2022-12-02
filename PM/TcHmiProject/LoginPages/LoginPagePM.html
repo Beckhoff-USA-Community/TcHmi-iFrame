@@ -318,6 +318,8 @@
 
             // call listUserNames to list all users in the project
             listUserNames();
+            
+
 
             // register onchange event to update the password input element on selection changed
             userList.onchange = function () {
@@ -351,7 +353,9 @@
             };
         });
 
-        // Get the complete url from browser and splitting the url at "?" in an array, e.g. http://127.0.0.1:1010/?View=View1
+        //login("TcHmiUserManagement", "Administrator", "1", true);
+
+        //// Get the complete url from browser and splitting the url at "?" in an array, e.g. http://127.0.0.1:1010/?View=View1
         let paramArray = window.location.href.split('?');
         let subParamArray = [];
         let actionList = [];
@@ -380,7 +384,8 @@
                     //All user accounts on process modules share the same password
                     break;
             }
-        });
+        }
+        );
 
         /**
          * Send WebSocket request for login with username, password and stay logged in option
@@ -415,7 +420,7 @@
                             "symbol": "Login",
                             "writeValue":
                             {
-                                "userName": (domainname ? domainname + "::" : "") + username,
+                                "userName": (domainname ? domainname + "::" : "") + username,                            
                                 "password": password,
                                 "persistent": stayLoggedIn
                             }
