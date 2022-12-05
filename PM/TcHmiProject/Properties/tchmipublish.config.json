@@ -40,7 +40,7 @@
     "userName": "",
     "encryptedPassword": "",
     "encryptedTcHmiServerPassword": "kumFzeRyrvWn5C2PMxa2LA==",
-    "tcHmiServerHost": "PM",
+    "tcHmiServerHost": "192.168.1.242",
     "tcHmiServerPort": "1020",
     "socketTimeout": "60",
     "clientCertificateCN": "",
@@ -49,7 +49,7 @@
     "launchBrowserAfterPublish": true,
     "createVirtualDirectoriesOnTargetSystem": false,
     "tcHmiServerUserName": "__SystemAdministrator",
-    "tcHmiDestinationUrl": "https://PM:1020",
+    "tcHmiDestinationUrl": "https://192.168.1.242:1020",
     "publishConfiguration": "remote",
     "tcHmiSavePassword": true,
     "tcHmiIgnoreCertificateErrors": true

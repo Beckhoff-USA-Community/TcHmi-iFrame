@@ -451,14 +451,14 @@
                         // New servers have a different session cookie name
                         cookieName += "-" + jsonObj.serverId;
                         // Remove legacy cookie
-                        document.cookie = "sessionId=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+                        document.cookie = "sessionId=; expires=Thu, 01 Jan 1970 00:00:00 GMT" +";SameSite=None ;Secure" ;
                     }
                     if (stayLoggedIn) {
                         // Remember the current session for 30 days
-                        document.cookie = cookieName + "=" + jsonObj.sessionId + ";path=/;max-age=" + 60 * 60 * 24 * 30;
+                        document.cookie = cookieName + "=" + jsonObj.sessionId + ";path=/;max-age=" + 60 * 60 * 24 * 30 +";SameSite=None ;Secure";
                     } else {
                         // Reset max-age
-                        document.cookie = cookieName + "=" + jsonObj.sessionId + ";path=/";
+                        document.cookie = cookieName + "=" + jsonObj.sessionId + ";path=/" +";SameSite=None ;Secure" ;
                     }
                     // Login was successful
                     if (window.location.pathname === "/Login") {

@@ -3,7 +3,7 @@
   "basePath": "./framework",
   "scaleMode": "None",
   "startupView": "Desktop.view",
-  "loginPage": "LoginPages/LoginPagePM.html",
+  "loginPage": "/LoginPages/LoginPagePM.html",
   "tcHmiServer": {
     "websocketIntervalTime": 500,
     "websocketTimeout": 20000,
